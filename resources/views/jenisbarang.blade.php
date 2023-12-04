@@ -1,6 +1,6 @@
 @extends('templating.template')
-@section('title', 'Data Pengguna')
-@section('menu', 'Data Pengguna')
+@section('title', 'Data Jenis Barang')
+@section('menu', 'Data Jenis Barang')
 @section('content')
     <div class="row">
         <div class="col-lg-12">
@@ -17,10 +17,10 @@
                     <table class="table datatable">
                         <thead>
                             <tr>
-                                <th>
+                                <th class="text-center"> 
                                     #
                                 </th>
-                                <th>Jenis Barang</th>
+                                <th class="text-center">Jenis Barang</th>
                               
                                 <th>Aksi</th>
                             </tr>
@@ -41,7 +41,7 @@
                                             <i class="ri-edit-2-line"></i>
                                         </button> |
                                         <button type="button" class="btn btn-danger delete-btn" data-id="{{ $item->id }}">
-                                            <i class="bi bi-trash-fill"></i> Hapus
+                                            <i class="bi bi-trash-fill"></i>
                                         </button>
 
 

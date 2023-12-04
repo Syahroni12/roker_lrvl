@@ -52,4 +52,8 @@ class JenisbarangController extends Controller
         return back();
         
     }
+    public function hapusjenis($id) {
+         Jenisbarang::find($id)->delete();
+         return response()->json(['message' => 'Data berhasil dihapus'], 200);
+    }
 }
